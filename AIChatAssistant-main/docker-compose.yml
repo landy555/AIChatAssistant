@@ -1,0 +1,9 @@
+services:
+  ai-chat:
+    build: .
+    image: ai-chat-assistant
+    container_name: ai-chat
+    stdin_open: true
+    tty: true
+    environment:
+      - SILICON_API_KEY=${SILICON_API_KEY}
